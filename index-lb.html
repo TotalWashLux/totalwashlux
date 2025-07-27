@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Total Wash Lux</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Total Wash Lux</h1>
+    <p class="tagline">Zouverlässeg. Professionnell. Präiswert.</p>
+
+    <div class="language-switcher">
+      <label for="language-select">Sprooch:</label>
+      <select id="language-select" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="lb" selected>Lëtzebuergesch</option>
+      </select>
+    </div>
+
+    <script>
+      function changeLanguage(lang) {
+        if (lang === 'en') window.location.href = 'index.html';
+        if (lang === 'de') window.location.href = 'index-de.html';
+        if (lang === 'fr') window.location.href = 'index-fr.html';
+        if (lang === 'lb') window.location.href = 'index-lb.html';
+      }
+    </script>
+  </header>
+
+  <section>
+    <div class="services-section">
+      <h2>Eis Déngschtleeschtungen:</h2>
+      <hr />
+      <ul class="services">
+        <li>
+          <strong>Parkplazen & Trottoiren botzen</strong>
+          <p>Mir entfernen Uelegflecken, Dreck a Schmotz fir propper an sécher Uewerflächen.</p>
+        </li>
+        <li>
+          <strong>Geschäftsfronten botzen</strong>
+          <p>Eng propper Entrée mécht en staarkt éischt Androck a zitt méi Clienten un.</p>
+        </li>
+        <li>
+          <strong>Terrassen & Zäiten botzen</strong>
+          <p>Hochdrock Botzen léisst d’natierlech Schéinheet vun Ärem Holz ervirkommen.</p>
+        </li>
+      </ul>
+      <img src="logotw.jpg" alt="Firmenlogo" class="services-logo" />
+    </div>
+  </section>
+
+  <section class="about-us">
+    <h2>Iwwert eis</h2>
+    <p>
+      Mir sinn zwou engagéiert Studenten, déi dëst klengt Geschäft gegrënnt hunn, fir professionnell Qualitéit zu bezuelbare Präisser unzebidden. Mat vill Engagement a Opmierksamkeet op Detailer ginn all Aufgab mat derbäi.
+    </p>
+  </section>
+
+  <section>
+    <h2>Vir & No Biller</h2>
+    <div class="gallery">
+      <div class="before-after">
+        <img src="before1.jpg" alt="Parkplaz virum Botzen" />
+        <img src="before2.jpeg" alt="Parkplaz no Botzen" />
+      </div>
+      <div class="before-after">
+        <img src="before3.jpg" alt="Fassad virum Botzen" />
+        <img src="before4.jpeg" alt="Fassad no Botzen" />
+      </div>
+      <div class="before-after">
+        <img src="before5.jpg" alt="Fassad virum Botzen" />
+        <img src="before6.jpg" alt="Fassad no Botzen" />
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <h2>Kontakt</h2>
+    <p>
+      Mir bidden gratis Offeren vir Ort oder online — séier, éierlech a ouni Obligatioun. Rëff eis un oder schéck eng E-Mail, mir këmmeren eis drëms.
+    </p>
+    <p>
+      Kontaktéiert eis per Telefon oder E-Mail — mir si fir Iech do!
+    </p>
+    <ul class="contact-details">
+      <li><strong>Telefon:</strong> <a href="tel:+352661702005">+352 661 702 005</a></li>
+      <li><strong>E-Mail:</strong> <a href="mailto:totalwash.lux@gmail.com">totalwash.lux@gmail.com</a></li>
+    </ul>
+  </section>
+</body>
+</html>

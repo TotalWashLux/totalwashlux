@@ -1,0 +1,251 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+
+.site-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  font-size: 3rem;         /* Make business name bigger */
+  margin-bottom: 0.3rem;   /* Reduce space below it */
+}
+
+.site-header .tagline {
+  font-size: 1.2rem;
+  line-height: 1.2;        /* Tighten line spacing */
+  color: #120b0b;
+}
+
+
+
+
+header {
+  background-color: #0078d4;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+section {
+  padding: 2rem;
+  background: white;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.before-after {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.before-after img {
+  max-width: 100%;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.services-section {
+  display: flex;
+  align-items: flex-start; /* align logo top with services list */
+  gap: 3rem;               /* space between services and logo */
+  margin-top: 1rem;
+}
+
+.services {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  flex: 1;                /* takes all available width except logo */
+}
+
+.services li {
+  margin-bottom: 2rem;    /* space between services */
+}
+
+.services li p {
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.services-logo {
+  width: 400px;          /* big logo, adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
+.services {
+  font-size: 1.15rem; /* overall bigger text */
+}
+
+.services li strong {
+  font-size: 1.4rem;  /* emphasize titles more */
+}
+
+.services li p {
+  font-size: 1.15rem; /* match list size for paragraphs */
+}
+
+.about-us {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #f9f9f9; /* subtle background */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 700px;
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.contact-us {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #f2f7fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 700px;
+}
+
+.contact-us h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-us p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.contact-details li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-details a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.95rem;
+}
+
+.language-switcher select {
+  padding: 5px;
+  font-size: 1rem;
+}
+ 
+/* Your existing styles here */
+
+/* Add this at the bottom of style.css */
+
+@media (max-width: 768px) {
+  /* Responsive tweaks for tablets and small screens */
+  .services-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-logo {
+    margin-top: 20px;
+    max-width: 150px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  p, li {
+    font-size: 1em;
+  }
+  body {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Responsive tweaks for phones */
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p, li {
+    font-size: 0.9em;
+  }
+}
+
+/* Make all images scale down */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.services-logo {
+  max-width: 260px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.services-section h2 {
+  margin-bottom: 10px;
+}
+
+.services-section ul.services {
+  margin-top: 0;
+  padding-left: 20px;
+  line-height: 1.4;
+}
+
+.services-section h2 {
+  font-size: 2.2em;    /* bigger font size */
+  margin-bottom: 5px;  /* less space below */
+  margin-top: 0;
+  line-height: 1;      /* tightest comfortable line spacing */
+}

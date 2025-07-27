@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Total Wash Lux</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Total Wash Lux</h1>
+    <p class="tagline">Zuverlässig. Professionell. Preiswert.</p>
+
+    <div class="language-switcher">
+      <label for="language-select">Sprache:</label>
+      <select id="language-select" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="de" selected>Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="lb">Lëtzebuergesch</option>
+      </select>
+    </div>
+
+    <script>
+      function changeLanguage(lang) {
+        if (lang === 'en') window.location.href = 'index.html';
+        if (lang === 'de') window.location.href = 'index-de.html';
+        if (lang === 'fr') window.location.href = 'index-fr.html';
+        if (lang === 'lb') window.location.href = 'index-lb.html';
+      }
+    </script>
+  </header>
+
+  <section>
+    <div class="services-section">
+      <h2>Unsere Leistungen:</h2>
+      <hr />
+      <ul class="services">
+        <li>
+          <strong>Einfahrten & Gehwege reinigen</strong>
+          <p>Wir entfernen Öl, Schmutz und Ablagerungen für saubere und sichere Oberflächen.</p>
+        </li>
+        <li>
+          <strong>Geschäftsfronten reinigen</strong>
+          <p>Ein sauberer Eingangsbereich sorgt für einen starken ersten Eindruck und zieht mehr Kunden an.</p>
+        </li>
+        <li>
+          <strong>Terrassen & Zäune reinigen</strong>
+          <p>Unsere Hochdruckreinigung bringt die natürliche Schönheit Ihres Holzes zur Geltung.</p>
+        </li>
+      </ul>
+      <img src="logotw.jpg" alt="Company Logo" class="services-logo" />
+    </div>
+  </section>
+
+  <section class="about-us">
+    <h2>Über Uns</h2>
+    <p>
+      Wir sind zwei engagierte Studenten, die dieses Kleinunternehmen gegründet haben, um professionelle Reinigungsqualität zu erschwinglichen Preisen anzubieten. Mit viel Einsatz und Liebe zum Detail arbeiten wir an jedem Auftrag mit vollem Engagement.
+    </p>
+  </section>
+
+  <section>
+    <h2>Vorher & Nachher Bilder</h2>
+    <div class="gallery">
+      <div class="before-after">
+        <img src="before1.jpg" alt="Einfahrt vor der Reinigung" />
+        <img src="before2.jpeg" alt="Einfahrt nach der Reinigung" />
+      </div>
+      <div class="before-after">
+        <img src="before3.jpg" alt="Fassade vor der Reinigung" />
+        <img src="before4.jpeg" alt="Fassade nach der Reinigung" />
+      </div>
+      <div class="before-after">
+        <img src="before5.jpg" alt="Fassade vor der Reinigung" />
+        <img src="before6.jpg" alt="Fassade nach der Reinigung" />
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <h2>Kontakt</h2>
+    <p>
+      Wir bieten kostenlose Vor-Ort- oder Online-Angebote — schnell, ehrlich und unverbindlich. Einfach anrufen oder eine E-Mail schreiben — wir kümmern uns um den Rest.
+    </p>
+    <p>
+      Kontaktieren Sie uns telefonisch oder per E-Mail — wir sind für Sie da!
+    </p>
+    <ul class="contact-details">
+      <li><strong>Telefon:</strong> <a href="tel:+352661702005">+352 661 702 005</a></li>
+      <li><strong>Email:</strong> <a href="mailto:totalwash.lux@gmail.com">totalwash.lux@gmail.com</a></li>
+    </ul>
+  </section>
+</body>
+</html>

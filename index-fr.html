@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Total Wash Lux</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Total Wash Lux</h1>
+    <p class="tagline">Fiable. Professionnel. Abordable.</p>
+
+    <div class="language-switcher">
+      <label for="language-select">Langue :</label>
+      <select id="language-select" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="fr" selected>Français</option>
+        <option value="lb">Lëtzebuergesch</option>
+      </select>
+    </div>
+
+    <script>
+      function changeLanguage(lang) {
+        if (lang === 'en') window.location.href = 'index.html';
+        if (lang === 'de') window.location.href = 'index-de.html';
+        if (lang === 'fr') window.location.href = 'index-fr.html';
+        if (lang === 'lb') window.location.href = 'index-lb.html';
+      }
+    </script>
+  </header>
+
+  <section>
+    <div class="services-section">
+      <h2>Nos Services:</h2>
+      <hr />
+      <ul class="services">
+        <li>
+          <strong>Nettoyage des allées & trottoirs</strong>
+          <p>Nous éliminons l’huile, la saleté et les résidus pour des surfaces propres et sûres.</p>
+        </li>
+        <li>
+          <strong>Nettoyage des devantures commerciales</strong>
+          <p>Une entrée propre donne une excellente première impression et attire plus de clients.</p>
+        </li>
+        <li>
+          <strong>Nettoyage des terrasses & clôtures</strong>
+          <p>Le nettoyage haute pression révèle la beauté naturelle de votre bois.</p>
+        </li>
+      </ul>
+      <img src="logotw.jpg" alt="Logo de l'entreprise" class="services-logo" />
+    </div>
+  </section>
+
+  <section class="about-us">
+    <h2>À Propos</h2>
+    <p>
+      Nous sommes deux étudiants motivés qui ont lancé cette petite entreprise pour offrir une qualité de nettoyage professionnelle à des prix abordables. Avec engagement et souci du détail, nous abordons chaque mission avec sérieux.
+    </p>
+  </section>
+
+  <section>
+    <h2>Photos Avant & Après</h2>
+    <div class="gallery">
+      <div class="before-after">
+        <img src="before1.jpg" alt="Allée avant nettoyage" />
+        <img src="before2.jpeg" alt="Allée après nettoyage" />
+      </div>
+      <div class="before-after">
+        <img src="before3.jpg" alt="Façade avant nettoyage" />
+        <img src="before4.jpeg" alt="Façade après nettoyage" />
+      </div>
+      <div class="before-after">
+        <img src="before5.jpg" alt="Façade avant nettoyage" />
+        <img src="before6.jpg" alt="Façade après nettoyage" />
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <h2>Contact</h2>
+    <p>
+      Nous proposons des devis gratuits sur place ou en ligne — rapides, honnêtes et sans engagement. Appelez-nous ou envoyez-nous un email, on s’occupe du reste.
+    </p>
+    <p>
+      Contactez-nous par téléphone ou par email — nous sommes là pour vous !
+    </p>
+    <ul class="contact-details">
+      <li><strong>Téléphone :</strong> <a href="tel:+352661702005">+352 661 702 005</a></li>
+      <li><strong>Email :</strong> <a href="mailto:totalwash.lux@gmail.com">totalwash.lux@gmail.com</a></li>
+    </ul>
+  </section>
+</body>
+</html>
